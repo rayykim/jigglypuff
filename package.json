@@ -35,6 +35,7 @@
     "express": "^4.17.1",
     "firebase": "^6.2.0",
     "firebase-admin": "^8.1.0",
+    "passport-google-oauth": "^2.0.0",
     "pg": "^7.11.0",
     "postgresql": "0.0.1",
     "prop-types": "^15.7.2",
