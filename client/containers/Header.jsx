@@ -2,11 +2,15 @@ import React from "react";
 import CartBtn from "../components/CartBtn";
 import NavBar from "../components/Navbar";
 import { connect } from "react-redux";
-import "typeface-roboto";
+// import "typeface-roboto";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import { MuiThemeProvider, createMuiTheme } from "material-ui/styles";
+// import Typography from "@material-ui/core/Typography";
+// import { MuiThemeProvider, createMuiTheme } from "material-ui/styles";
 
 import * as actions from "../actions/actions";
+import { typography } from "@material-ui/system";
 
 const mapStateToProps = store => ({
   totalItemsInCart: store.products.totalItemsInCart
@@ -18,16 +22,10 @@ const mapDispatchToProps = dispatch => ({
 
 function Header(props) {
   return (
-    <header>
-      <div className="header-left">
-        <Typography variant="display1" align="center" gutterBottom>
-          {" "}
-          Exercises{" "}
-        </Typography>
-        <Typography variant="title" color="mint">
-          DrewsList
-        </Typography>
-      </div>
+    <div>
+      <header>
+        <div>test</div>
+      </header>
       <div className="header-right">
         <NavBar />
         <CartBtn
@@ -35,7 +33,7 @@ function Header(props) {
           totalItemsInCart={props.totalItemsInCart}
         />
       </div>
-    </header>
+    </div>
   );
 }
 

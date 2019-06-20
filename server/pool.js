@@ -10,8 +10,9 @@ const {
 } = process.env;
 
 const url =
-  "postgres://pcaahclq:0IiL4iHED2nFPNQChbfDd_w0rz_dEigx@raja.db.elephantsql.com:5432/pcaahclq";
+  "postgres://ffwqzmdr:SP10ayxz6FDRxIXdsEIC2KZGEK0qnHcP@raja.db.elephantsql.com:5432/ffwqzmdr";
 
+const uriLocal = "postgres://dev:ilovetesting@localhost/drewslist";
 const pool = new Pool({
   connectionString: url
 });

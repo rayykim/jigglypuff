@@ -1,0 +1,307 @@
+body {
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
+  }
+
+  @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  
+  header {
+    border: 1px solid black;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+  }
+  
+  .header-left {
+    display: flex;
+  }
+  
+  .login_button {
+    height: 25px;
+    width: 60px;
+    background-color: #bdbdff;
+    border-radius: 10px;
+    border-color: black;
+  }
+  
+  .header-right {
+    display: flex;
+  }
+  
+  main {
+    /* border: 1px solid black; */
+    height: 65vh;
+    padding: 3em;
+  }
+  
+  footer {
+    /* border: 1px solid black; */
+    font-size: 1.2em;
+    height: 10vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  footer * {
+    margin: 0 5px;
+  }
+  
+  footer img {
+    width: 40px;
+  }
+  
+  ul.navbar {
+    align-items: center;
+    display: flex;
+  }
+  
+  ul.navbar li {
+    display: inline-block;
+    padding: 0 3px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  img {
+    /* border: 1px solid black; */
+  }
+  
+  h1 {
+    font-size: 4em;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  .addproduct {
+    margin: 10px;
+  }
+  
+  tabs {
+    display: flex;
+  }
+  
+  #catalogview {
+    /* border: 1px solid gray; */
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5em;
+  }
+  
+  #catalog {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+  }
+  
+  .product {
+    border: 1px solid lightsteelblue;
+    width: 200px;
+    height: 47%;
+    margin: 10px auto 10px 20px;
+  }
+  
+  #cart-btn {
+    font-size: 1em;
+    background-color: white;
+    padding: 1em;
+  }
+  
+  #addtocart {
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: #ff1493;
+    color: white;
+  }
+  
+  #description {
+    font-size: 0.75em;
+    padding-bottom: 0.5em;
+  }
+  
+  /* verlay styles, all needed */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+  
+  /* just some content with arbitrary styles for explanation purposes */
+  .modal {
+    width: 60%;
+    /* height: 80%; */
+    /* line-height: 200px; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -30%;
+    background-color: #ffdd99;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 11; /* 1px higher than the overlay layer */
+    padding: 30px 0;
+  }
+  
+  #checkoutModal {
+    height: 100%;
+  }
+  
+  #checkoutSummary {
+    padding: 50px 30px;
+    font-size: 1.5em;
+  }
+  
+  #checkoutSummary li {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .productSummary {
+    padding: 3px;
+  }
+  
+  #checkoutSummary .purchaseHeader {
+    font-weight: 900;
+    margin: 20px 0;
+  }
+  
+  #purchaseBtn {
+  }
+  
+  .text {
+    padding: 0.2em;
+    font-size: 14px;
+  }
+  
+  a.btn {
+    display: inline-block;
+    color: #666;
+    background-color: #eee;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom-width: 3px;
+  }
+  
+  a.btn:hover {
+    background-color: #e3e3e3;
+    border-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  a.btn:active {
+    background-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  a.btn.btn-blue {
+    background-color: #699db6;
+    border-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  
+  a.btn.btn-blue:hover {
+    background-color: #4f87a2;
+    border-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  a.btn.btn-blue:active {
+    background-color: #3c677b;
+    border-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  #exitBtn {
+    display: inline-block;
+    color: #666;
+    background-color: #eee;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+    padding: 20px 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom-width: 3px;
+  }
+  
+  #exitBtn:hover {
+    background-color: #e3e3e3;
+    border-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  #exitBtn:active {
+    background-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  #exitBtn {
+    background-color: #699db6;
+    border-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  
+  #exitBtn:hover {
+    background-color: #4f87a2;
+    border-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  #exitBtn:active {
+    background-color: #3c677b;
+    border-color: rgba(0, 0, 0, 0.9);
+  }
+  

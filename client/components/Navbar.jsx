@@ -1,10 +1,22 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+
+const btnStyles = makeStyles(theme => ({
+  button: {
+    margin: theme.spacing(1)
+  },
+  input: {
+    display: "none"
+  }
+}));
 
 function NavBar() {
   function login(e) {
     e.preventDefault();
     window.location = "http://localhost:3000/auth/google";
   }
+  const classes = btnStyles();
   return (
     <ul className="navbar">
       <li>
@@ -12,9 +24,15 @@ function NavBar() {
       </li>
       <li>
         {/* <a href="Login">Login</a> */}
-        <button onClick={login} type="submit" className="login_button">
+
+        <Button
+          variant="contained"
+          color="secondary"
+          onClick={login}
+          className={classes.button}
+        >
           Login
-        </button>
+        </Button>
       </li>
     </ul>
   );

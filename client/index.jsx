@@ -6,9 +6,12 @@ import './css/application.css';
 import { Provider } from 'react-redux';
 import store from './store';
 
+// import styles from './scss/application.scss';
+
 render (
   <Provider store = {store}>
     <App />
   </Provider>,
   document.getElementById('root')
 )
+
